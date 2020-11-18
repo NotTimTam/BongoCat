@@ -40,6 +40,7 @@ const bongoCat = document.getElementById("bongo-cat");
 // Change instrument.
 function changeInstrument(name) {
     instrument = name;
+    document.getElementById("inst-heading").innerText = name;
     bongoCat.setAttribute('src', `images/${instrument}/arms-up.svg`);
     if (name == "keyboard") {
         key1 = `images/${name}/key-1.svg`;
@@ -113,17 +114,17 @@ window.onkeypress = function(evt) {
         space: armsDown
     };
 
-    if (keypressed == keyD && instrument == "keyboard") {
+    if (keypressed == keyD && (instrument == "keyboard")) {
         play('d');
-    } else if (keypressed == keyF && instrument == "keyboard") {
+    } else if (keypressed == keyF && (instrument == "keyboard")) {
         play('f');
     } else if (keypressed == keyG) {
         play('g');
     } else if (keypressed == keyH) {
         play('h'); 
-    } else if (keypressed == keyJ && instrument == "keyboard") {
+    } else if (keypressed == keyJ && (instrument == "keyboard")) {
         play('j'); 
-    } else if (keypressed == keyK && instrument == "keyboard") {
+    } else if (keypressed == keyK && (instrument == "keyboard")) {
         play('k'); 
     } else if (keypressed == keySpace) {
         play('space'); 

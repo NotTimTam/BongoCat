@@ -1,5 +1,10 @@
-main {
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+#inst-heading {
+    text-transform: uppercase;
 }
 
 #bongo-cat {
