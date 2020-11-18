@@ -58,8 +58,7 @@ function changeInstrument(name) {
         key5 = `images/${name}/key-2.svg`;
         key6 = `images/${name}/key-2.svg`;
         armsUp = `images/${name}/arms-up.svg`;
-        // REPLACE WITH NEW ANIMATION
-        armsDown = `images/keyboard/arms-down-keys.svg`;
+        armsDown = `images/${name}/arms-down-keys.svg`;
     }
 }
 
@@ -80,6 +79,7 @@ function play_F(src) {
 
 // Choose instrument.
 let instrument = "keyboard";
+changeInstrument("bongo");
 
 // Key code/Animation connections.
 let keys = {
@@ -125,7 +125,7 @@ window.onkeypress = function(evt) {
         play('j'); 
     } else if (keypressed == keyK && instrument == "keyboard") {
         play('k'); 
-    } else if (keypressed == keySpace && instrument == "keyboard") {
+    } else if (keypressed == keySpace) {
         play('space'); 
     } else if (keypressed == keyOne) {
         changeInstrument("keyboard");
