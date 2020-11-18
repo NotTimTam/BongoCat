@@ -14,7 +14,7 @@
     <link rel='stylesheet' href='style.css'>
     <link rel='shortcut icon' href='favicon.png' type='image/x-icon'>
 </head>
-<body>
+<body onload="console.log('Finished loading page...');">
     <h1 id="inst-heading">bongo</h1>
     <image id="bongo-cat" src="images\keyboard\arms-up.svg"></image>
     <script src="main.js"></script>
@@ -22,7 +22,7 @@
     <p>Play with D, F, G, H, J, K, and Space<br>User 1, 2, 3, 4, 5, 6, 7, 8, 9, and 0 to switch instruments.</p>
 
     <!-- PRELOAD THE SOUNDS -->
-    <audio src="audio/keyboard/d.wav" preload="auto"></audio>
+    <audio src="audio/keyboard/d.wav" preload="auto" onload="console.log('5%');"></audio>
     <audio src="audio/keyboard/f.wav" preload="auto"></audio>
     <audio src="audio/keyboard/g.wav" preload="auto"></audio>
     <audio src="audio/keyboard/h.wav" preload="auto"></audio>
