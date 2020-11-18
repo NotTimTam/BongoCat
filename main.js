@@ -69,11 +69,7 @@ function play_F(src) {
     audio.src = src;
     audio.id = "tempaud";
     audio.addEventListener("ended", function () {
-        try {
-            document.removeChild(this);
-        } catch {
-            console.warn("FAILED TO REMOVE " + this);
-        }
+        this.remove();
     }, false);
     audio.play();
 }
@@ -128,9 +124,9 @@ window.onkeypress = function(evt) {
         play('k'); 
     } else if (keypressed == keySpace) {
         play('space'); 
-    } else if (keypressed == keyOne) {
-        changeInstrument("keyboard");
     } else if (keypressed == keyTwo) {
+        changeInstrument("keyboard");
+    } else if (keypressed == keyOne) {
         changeInstrument("bongo");
     }
 };
