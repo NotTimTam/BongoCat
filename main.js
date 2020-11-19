@@ -51,6 +51,7 @@ function changeInstrument(name) {
         key6 = `images/${name}/key-6.svg`;
         armsUp = `images/${name}/arms-up.svg`;
         armsDown = `images/${name}/arms-down-keys.svg`;
+        document.getElementById("inst").innerHTML = "Play with D, F, G, H, J, K, and Space";
     } else if (name == "bongo") {
         key1 = `images/${name}/key-1.svg`;
         key2 = `images/${name}/key-1.svg`;
@@ -60,6 +61,7 @@ function changeInstrument(name) {
         key6 = `images/${name}/key-2.svg`;
         armsUp = `images/${name}/arms-up.svg`;
         armsDown = `images/${name}/arms-down-keys.svg`;
+        document.getElementById("inst").innerHTML = "Play with G, H, and Space";
     }
 }
 
